@@ -1,17 +1,15 @@
 import { combineReducers } from "redux";
-import { userReducer } from "./modules/user/userReducer";
-import { chatReducer } from "./modules/chat/chatReducer";
+import { chartReducer } from "./modules/chart/chartReducer";
 import { generalReducer } from "./modules/general/generalReducer";
 import { all } from "redux-saga/effects";
-import chatSaga from "./modules/chat/sagas";
+import chartSaga from "./modules/chart/sagas";
 
 export function* rootSaga() {
-  yield all([chatSaga()]);
+  yield all([chartSaga()]);
 }
 
 export const rootReducer = combineReducers({
-  user: userReducer,
-  chat: chatReducer,
+  chart: chartReducer,
   general: generalReducer
 });
 

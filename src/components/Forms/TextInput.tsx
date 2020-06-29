@@ -21,7 +21,7 @@ const TextFieldStyled = styled(TextField)`
   flex-grow: 1;
 `;
 
-const SignupForm = props => {
+const TextFieldCustom = props => {
   const id = uuidv4();
   const isError = Boolean(
     props.formik.touched[props.name] && props.formik.errors[props.name]
@@ -47,4 +47,4 @@ const SignupForm = props => {
   );
 };
 
-export default SignupForm;
+export default TextFieldCustom;

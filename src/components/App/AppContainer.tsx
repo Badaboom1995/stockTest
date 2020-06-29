@@ -1,11 +1,12 @@
 import React from "react";
-import Chat from "src/components/Chat/Chat";
 import { FlexWrapper } from "src/components/shared";
-import { Wrapper } from "./styled";
+import Chart from "src/components/Chart";
+import ValuesTable from "src/components/ValuesTable";
 function AppContainer() {
   return (
     <FlexWrapper>
-      <Chat></Chat>
+      <Chart></Chart>
+      <ValuesTable></ValuesTable>
     </FlexWrapper>
   );
 }
